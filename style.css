@@ -5,10 +5,19 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 body{
-    background-color: #E5E5E5;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 #header{
@@ -16,19 +25,22 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: #2E948A;
-    padding: 20px;
+    padding: 20px 5vw;
 }
 
 #logo-header{
-    width: 180px;
+    height: 57px;
     margin: auto;
 }
 
-#btn-menu{
+#logo-header img{
+    height: 100%;
+}
+
+#btn_menu{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 2px 0px;
+    justify-content: space-around;
     background: none;
     height: 25px;
     border: none;
@@ -38,22 +50,30 @@ body{
 .hamburguer{
     width: 30px;
     height: 4px;
-    background: white;
+    background: #FDFDFD;
+}
+
+#hamb-1{
+    display: none;
+}
+
+#hamb-2{
+    transform: rotate(45deg) translate(4px, 4px);
+}
+
+#hamb-3{
+    transform: rotate(-45deg) translate(5px, -4.5px);
 }
 
 #menu{
-    list-style: none;
     display: none;
-    gap: 40px;
-    margin-right: 100px;
 }
 
 #menu a{
-    text-decoration: none;
-    color: white;
+    color: #FDFDFD;
 }
 
-@media (min-width: 800px){
+/* @media (min-width: 800px){
     #btn-menu{
         display: none;
     }
@@ -61,6 +81,6 @@ body{
         display: flex;
     }
     #logo-header{
-        margin: 0px 100px;
+        margin: 0px 0px;
     }
-}
+} */
