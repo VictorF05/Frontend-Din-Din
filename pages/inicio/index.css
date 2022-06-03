@@ -1,0 +1,246 @@
+#banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px 5vw 66px 5vw;
+    background-color: #F7F7F7;
+}
+
+#ban_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #FF4081;
+}
+
+#banner p{
+    font-size: 27px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.btn_ros_t{
+    font-size: 25px;
+    font-weight: 400;
+    color: #FF4081;
+    background: none;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    padding: 10px 20px;
+}
+
+#cursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #E5E5E5;
+    padding: 100px 5vw;
+    gap: 50px;
+}
+
+#cursos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+    gap: 20px;
+}
+
+#cursos h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: #FF4081;
+    text-align: center;
+}
+
+#cursos p{
+    font-size: 17px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+}
+
+.btn_ros_s{
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #FF4081;
+    border: none;
+    border-radius: 62px;
+    padding: 10px 20px;
+}
+
+#depoimentos{
+    display: flex;
+    flex-direction: column;
+}
+
+#depoimentos header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+    padding: 0px 10vw;
+}
+
+#depoimentos h2{
+    font-size: 37px;
+    font-weight: 700;
+    color: #009688;
+    text-align: center;
+}
+
+#depoimentos section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 0px 10vw 100px 10vw;
+}
+
+#depoimentos div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+    gap: 20px;
+}
+
+#depoimentos p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    max-width: 350px;
+}
+
+#depoimentos span{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+}
+
+#blog header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+    padding: 0px 10vw;
+}
+
+#blog section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 10vw;
+    gap: 50px;
+}
+
+#blog div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 320px;
+    gap: 20px;
+}
+
+#blog img{
+    width: 100%;
+}
+
+#blog h2{
+    font-size: 37px;
+    font-weight: 700;
+    color: #009688;
+    text-align: center;
+}
+
+#blog h3{
+    font-size: 27px;
+    font-weight: 700;
+    color: #009688;
+    text-align: center;
+}
+
+#blog p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+
+#blog footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 0px 10vw;  
+}
+
+@media(max-width: 1340px){
+    #cursos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #depoimentos header{
+        justify-content: center;
+    }
+
+    #depoimentos section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #blog header{
+        justify-content: center;
+    }
+
+    #blog section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1000px){
+    #ban_img{
+        display: none;
+    }
+}
+
+@media(max-width: 592px){
+    #depoimentos p{
+        text-align: center;
+    }
+}
+
+button{
+    cursor: pointer;
+}
