@@ -231,7 +231,7 @@ h1{
 
 @media(max-width: 1000px){
     #banner{
-        gap: 0px    ;
+        gap: 0px;
     }
     #ban_txt{
         align-items: center;
