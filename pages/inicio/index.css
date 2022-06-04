@@ -230,6 +230,18 @@ h1{
 }
 
 @media(max-width: 1000px){
+    #banner{
+        gap: 0px    ;
+    }
+    #ban_txt{
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+    }
+    #ban_txt p{
+        text-align: center;
+    }
     #ban_img{
         display: none;
     }

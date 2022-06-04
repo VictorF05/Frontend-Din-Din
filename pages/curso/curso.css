@@ -1,0 +1,132 @@
+#introduction{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px 5vw 66px 5vw;
+    background-color: #F7F7F7;
+}
+
+#intro_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 460px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #FF4081;
+}
+
+#intro_txt p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #555555;
+}
+
+#aulas{
+    padding: 70px 5vw;
+    background-color: #E5E5E5;
+}
+
+.aula{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+#aula_1{
+    padding: 0px 0px 70px 0px;
+}
+
+#aula_2{
+    padding: 70px 0px;
+    border-top: 5px solid #C4C4C4;
+    border-bottom: 5px solid #C4C4C4;
+}
+
+#aula_3{
+    padding: 70px 0px;
+}
+
+.aula_img{
+    display: flex;
+}
+
+.aula_img img{
+    cursor: pointer;
+}
+
+.aula_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 500px;
+}
+
+.aula_txt h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: #FF4081;
+    text-align: center;
+}
+
+.aula_txt p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+}
+
+@media(max-width: 1130px){
+    .aula{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aula div{
+        align-items: center;
+    }
+
+    .aula p{
+        text-align: center;
+    }
+}
+
+@media(max-width: 1000px){
+    #introduction{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #intro_txt{
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+    }
+    #intro_txt p{
+        text-align: center;
+    }
+}
+
+@media(max-width: 550px){
+    .aula_img img{
+        max-width: 100%;
+    }
+    #intro_img{
+        display: none;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+}
